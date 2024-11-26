@@ -1,7 +1,15 @@
 package main
 
+import (
+	"fmt"
+
+	"github.com/romanpovol/music_library/internal/config"
+)
+
 func main() {
-	// TODO: init config
+	cfg := config.LoadBackendConfig()
+
+	fmt.Println(*cfg)
 
 	// TODO: init logger
 
